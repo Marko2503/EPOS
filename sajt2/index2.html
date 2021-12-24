@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+<body>
+<div class="naslov">
+        <h1><b>Fit Gym</b></h1>
+      </div>
+  
+      <hr />
+  
+      <div class="meni">
+        <a href="index.html">Početna</a>
+        <a href="sajt2/index.html">Treneri</a>
+        <a href="sajt3/index.html">Galerija</a>
+        <a href="sajt4/index.html">Cenovnik</a>
+      </div>
+  
+      <hr>
+
+    <h2 class="prijava">PRIJAVA</h2>
+      <div class="forma">
+          <div class="dete1">
+              <form id="forma1" style="background-color: rgba(236,233,216,255);">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="customer" 
+                class="surname" name="customer" size="35" maxlength="25">
+      
+                <br>
+                <br>
+      
+                <label for="telefon"> Telefon:</label>
+                <input type="text" id="fon" name="telefon" size="35" maxlength="15" minlength="10">
+                
+                <br>
+                <br>
+                Odaberi trenera:
+                <br>
+                <input type="radio" name="trener" value="Bojan" checked>
+                Bojan Vukobrat
+                <br>
+                <input type="radio" name="trener" value="Marko">
+                Marko Vukojević
+                <br>
+                <input type="radio" name="trener" value="Filip">
+                Filip Vukojević
+                <br>
+                <br>
+                Odaberi termin:
+                <br>
+                <input type="checkbox" name="dan" value="ponedeljak">
+                Ponedeljak <br>
+                <input type="checkbox" name="dan" value="utorak">
+                Utorak <br>
+                <input type="checkbox" name="dan" value="sreda">
+                Sreda <br>
+                <input type="checkbox" name="dan" value="cetvrtak">
+                Četvrtak <br>
+                <input type="checkbox" name="dan" value="petak">
+                Petak <br>
+                <input type="checkbox" name="dan" value="subota">
+                Subota <br>
+                <input type="checkbox" name="dan" value="nedelja">
+                Nedelja <br>
+                
+             <br>
+             Dodaj napomenu:
+             <br>
+             <textarea name="napomena" id="komentar" cols="50" rows="5">Dodaj komentar...</textarea>
+             <br>
+             Izaberite način plaćanja:
+             <br>
+             <select name="plaćanje" id="plaćanje" ><option value="cash">Keš</option>
+                <optgroup label="Kartica">
+        
+                    <option value="visa">Visa</option>
+                    <option value="master">Master</option>
+                    <option value="maestro">Maestro</option>
+                    <option value="dina">Dina</option>
+                </optgroup>
+              </select>
+              <br><br>
+            <button type="submit">Potvrdi</button>
+            <button type="reset">Obriši</button>
+        </form></div>
+        <div class="dete2">
+            <img src="images/kartice.jpeg" alt="kartice">
+        </div>
+      </div>
+    
+</body>
+</html>
