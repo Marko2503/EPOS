@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style021.css">
+<body>
+<div class="naslov">
+        <h1><b>Fit Gym</b></h1>
+      </div>
+  
+      <hr />
+  
+      <div class="meni">
+        <a href="index01.html">Početna</a>
+        <a href="index02.html">Treneri</a>
+        <a href="index03.html">Galerija</a>
+        <a href="index04.html">Cenovnik</a>
+      </div>
+  
+      <hr>
+
+      <a href="" class="scrollup">
+
+        <img src="images/top1.jpeg" alt="Nazad na vrh" />
+      
+      </a>
+
+      <div id="greska"></div>
+
+    <h2 class="prijava">PRIJAVA</h2>
+      <div class="forma">
+          <div class="dete1">
+              <form id="forma1" name="forma" style="background-color: rgba(236,233,216,255);">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="korisnik" 
+                class="prezime" name="korisnik" size="35" maxlength="25" required>
+      
+                <br>
+                <br>
+      
+                <label for="telefon"> Telefon:</label>
+                <input type="text" id="fon" name="telefon" size="35" maxlength="15" minlength="10" required>
+                
+                <br>
+                <br>
+                Odaberi trenera:
+                <br>
+                <input type="radio" name="trener" value="Bojan" checked>
+                Bojan Vukobrat
+                <br>
+                <input type="radio" name="trener" value="Marko">
+                Marko Vukojević
+                <br>
+                <input type="radio" name="trener" value="Filip">
+                Filip Vukojević
+                <br>
+                <br>
+                Odaberi termin:
+                <br>
+
+                <input type="radio" name="dan" id="1" value="ponedeljak" checked>
+                Ponedeljak <br>
+                <input type="radio" name="dan" id="2" value="utorak">
+                Utorak <br>
+                <input type="radio" name="dan" id="3" value="sreda">
+                Sreda <br>
+                <input type="radio" name="dan" id="4" value="cetvrtak">
+                Četvrtak <br>
+                <input type="radio" name="dan" id="5" value="petak">
+                Petak <br>
+                <input type="radio" name="dan" id="6" value="subota">
+                Subota <br>
+                <input type="radio" name="dan" id="7" value="nedelja">
+                Nedelja <br>
+                
+                
+             <br>
+             Dodaj napomenu:
+             <br>
+             <textarea class="napomena" name="napomena" id="komentar" cols="50" rows="5">Dodaj komentar...</textarea>
+             <br>
+             Izaberite način plaćanja:
+             <br>
+             <select class="placanje" name="placanje" id="plaćanje" ><option value="Keš">Keš</option>
+                <optgroup label="Kartica">
+        
+                    <option value="Visa">Visa</option>
+                    <option value="Master">Master</option>
+                    <option value="Maestro">Maestro</option>
+                    <option value="Dina">Dina</option>
+                </optgroup>
+              </select>
+              <br><br>
+            <button type="submit" class="dugme1" onclick="prikazi(); dani();">Potvrdi</button>
+            <button type="reset" class="dugme2">Obriši</button>
+        </form></div>
+
+        <div class="dete2">
+            <img class="slika1" src="images/kartice.jpeg" alt="kartice">
+        </div>
+      </div>
+    <script src="script/script021.js"></script>
+    <script src="script/jqueryScript021.js"></script>
+</body>
+</html>
